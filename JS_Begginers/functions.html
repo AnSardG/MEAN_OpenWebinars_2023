@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        /**
+         * Anonymous function with default parameter assigned to a variable.
+        */        
+        var sayHello = function (name = 'world') {
+            return `Hello ${name}`;
+        }
+        console.log(sayHello())
+        console.log(sayHello('Hola'))
+
+        /**
+         * Arrow functions, they are anonymous, have reduced syntaxis, maintain the
+         * scope and be used as an object (this).
+        */
+        const message = 'Text example'
+        console.log(parseInt('abc'))
+        /**
+         * This function doesn't need a body and will return the string.
+        */
+
+        var sayHello = (name) => `Hello ${name}`;
+        /**
+         * This function has a body since we want to return something.
+        */
+        var sayBye = (name) => {
+            return `Bye ${name}`
+        }
+        console.log(sayHello('Antonio'))
+        console.log(sayBye('Antonio'))
+    </script>
+</body>
+
+</html>
